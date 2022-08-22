@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circles">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+        </div>
+        <p id="resultado"></p>
+        <table>
+            <tr>
+             <th><button class="button2" onclick="limpar()">C</button></th>
+             <th><button class="button2" onclick="digitar(this)">%</button></th>
+             <th><button class="button2" onclick="digitar(this)">÷</button></th>
+             <th><button class="button2" onclick="digitar(this)">X</button></th>   
+            </tr>
+
+            <tr>
+                <th><button onclick="digitar(this)">7</button></th>
+                <th><button onclick="digitar(this)">8</button></th>
+                <th><button onclick="digitar(this)">9</button></th>
+                <th><button class="button2" onclick="digitar(this)">-</button></th>
+            </tr>
+
+            <tr>
+                <th><button onclick="digitar(this)">4</button></th>
+                <th><button onclick="digitar(this)">5</button></th>
+                <th><button onclick="digitar(this)">6</button></th>
+                <th><button class="button2" onclick="digitar(this)">+</button></th>
+            </tr>
+
+            <tr>
+                <th><button onclick="digitar(this)">1</button></th>
+                <th><button onclick="digitar(this)">2</button></th>
+                <th><button onclick="digitar(this)">3</button></th>
+                <th rowspan="2"><button class="button2" id="igual" onclick="calcular()">=</button></th>
+            </tr>
+
+            <tr>
+                <th><button id="zero" onclick="digitar(this)">0</button></th>
+                <th><button onclick="digitar(this)">.</button></th>
+                <th><button onclick="apagar()">&lt</button></th>
+            </tr>
+        </table>
+
+    </div>
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>
